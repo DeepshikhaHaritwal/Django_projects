@@ -1,0 +1,167 @@
+{% load static %}
+body {
+
+  opacity: 0.9;
+}
+.images{
+  
+    opacity: 1;
+  
+}
+
+
+/* Style the search box */
+#mySearch {
+  width: 20%;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  float:right;
+}
+
+/* FOR BUTTON add transaction
+.button1 {
+  background-color : #31B0D5;
+  color: white;
+  padding:   12px 28px;
+  border-radius: 4px;
+  border-color: #46b8da;
+}
+
+.button1 {
+  position: fixed;
+  bottom: 4px;
+  right: 20px;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*
+
+/*button image*/
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  ;
+  width: 30%;
+  float:left;
+}
+
+/* Make the image responsive 
+.container img {
+  width: 100%;
+  height: 100;
+  
+}*/
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  
+  top: 75px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  padding: 50px 36px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*button 2*/
+.loan .btn2 {
+  position: absolute;
+  
+  top: 80px;
+  left: 30%;
+  transform: translate(-50%, 90%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  padding:50px 36px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  
+
+}
+
+.loan .btn2:hover {
+  background-color: black;
+}
+.btn2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*button 3*/
+.expense .btn3{
+
+
+  transform: translate(250%, 10%);
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  padding: 50px 36px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+ 
+ 
+}
+.expense .btn3:hover {
+  background-color: black;
+}
+.btn3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*button 4*/
+.report .btn4{
+
+float: right;
+
+
+transform: translate(-150%, -90%);
+  -ms-transform: translate(50%, 50%);
+
+
+
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  padding: 50px 36px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.report .btn4:hover {
+  background-color: black;
+}
+.btn4:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

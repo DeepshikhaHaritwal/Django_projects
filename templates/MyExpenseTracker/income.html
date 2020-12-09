@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("{% static 'MyExpenseTracker/images/1.jpg' %}");
+  background-size: cover;
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+
+
+/*button submit*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+    </style>
+  </head>
+  <body>
+<div class="login-box">
+  <h1>INCOME</h1>
+  <form method="post" action="income">
+  <div class="textbox">
+
+      {% csrf_token %}
+  <input name= "budget" type="number" placeholder="add budget">
+  </div>
+  <br>
+  <br>
+
+
+
+  <div class="textbox">
+
+    <input name="category" type="text" placeholder="Add Income Source">
+  </div>
+
+<br>
+<br>
+  <div class="textbox">
+
+    <input name = "amount" type="number" placeholder=" Enter Amount">
+  </div>
+    <br>
+<br>
+<div class="textbox">
+
+    <input name = "date" type="date" placeholder="Enter the date of income">
+  </div>
+  <button type="submit" class="button button2">SUBMIT
+  </button>
+</form>
+</div>
+  </body>
+</html>

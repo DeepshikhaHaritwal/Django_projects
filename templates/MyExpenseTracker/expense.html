@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            background-image: url('{% static 'MyExpenseTracker/images/1.jpg' %}');
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'MyExpenseTracker/css/expense.css' %}">
+
+  </head>
+  <body>
+<div class="login-box">
+  <div class="topnav">
+
+  <!--  <a class="active" href="#home">Home</a>-->
+    <a href="dashboard">dashboard </a>
+
+  </div>
+
+  <h1>EXPENSE</h1>
+
+
+<form method="post" action="expense">
+  {% csrf_token %}
+  <div class="textbox">
+
+    <input name="estimated_expenses" type="text" placeholder="Add Estimated Expenses">
+  </div>
+
+<br>
+<br>
+  <div class="textbox">
+
+    <input name="category" type="text" placeholder="Add Expense Category">
+  </div>
+
+<br>
+<br>
+  <div class="textbox">
+
+    <input name="amount" type="number" placeholder="Add Expense Amount">
+  </div>
+  <br>
+  <br>
+<div class="textbox">
+
+    <input name="date" type="date" placeholder="Add Expense Date">
+  </div>
+
+<br>
+<br>
+  <button class="button button2">SUBMIT
+  </button>
+</form>
+  </body>
+</html>

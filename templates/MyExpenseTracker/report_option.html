@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <title>My Expense Tracker Dashboard</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'MyExpenseTracker/css/style1.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-image: url('{% static 'MyExpenseTracker/images/h.jpg' %}');
+}
+</style>
+
+</head>
+
+<body >
+
+  <nav class="navbar navbar-inverse visible-xs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+
+          <li><a href="#">Age</a></li>
+          <li><a href="#">Gender</a></li>
+          <li><a href="#">Geo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav hidden-xs">
+
+        <div class="images">
+          <img src="{% static 'MyExpenseTracker/images/p.jpg '%}" alt="expense tracker" style="width:300px;height:200px;">
+        </div>
+        <!--  <h2>Logo</h2>-->
+
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">HOME</a></li>
+          <li><a href="#section2">LOGIN</a></li>
+          <li><a href="#section3">SIGNUP</a></li>
+          <li><a href="#section3">TRANSACTION</a></li>
+        </ul><br>
+      </div>
+      <br>
+
+      <div class="col-sm-9">
+        <div class="">
+
+          <h1><b>EXPENSE TRACKER <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.."
+                title="Type in a category">
+          </b></h1>
+            <br>
+
+            <h3><b>Dashboard</b></h3>
+            <hr class="dotted">
+            <!--   <p>Some text..</p>-->
+            <!--   <button class="button button1">+   ADD TRANSACTION</button>-->
+
+
+            <!--add  button-->
+            <div class="container">
+
+              <button class="btn"><i class="fa fa-folder">&nbsp; &nbsp; &nbsp; &nbsp;</i><a href="report_display2">INCOMES REPORT</a></button>
+            </div>
+
+
+            <div class="loan">
+
+              <button class="btn2"><i class="fa fa-folder">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</i><a href="expense">EXPENSE REPORT</a></button>
+            </div>
+
+<br><br>
+<!--video-->
+
+
+
+</div></div>
+    </div>
+  </div>>
+</body>
+</html>
